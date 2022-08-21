@@ -39,12 +39,8 @@
 Набор тестовых данных: https://lodmedia.hb.bizmrg.com/case_files/791333/test_dataset_test.zip
 Данные о размерах автомобилей: https://auto.ru 
 Спецификация камер: https://www.devicespecifications.com
-<<<<<<< HEAD
 Формулы расчета расстояний до объектов на снимках: 
 https://bootsector.livejournal.com/43436.html?ysclid=l73h5v6pxn233007381 
-=======
-Формулы расчета расстояний до объектов на снимках: https://bootsector.livejournal.com/43436.html?ysclid=l73h5v6pxn233007381 
->>>>>>> d33bada0cb6cb0aa1ad055bd9fe538563b96e5e1
 Ручная разметка снимка img_2674.heic: https://www.makesense.ai
 
 ```
@@ -96,12 +92,11 @@ check_cars (результаты разметки и обогащения дан
     ├── test_data_df_x.csv (тестовые данные после разметки моделью YOLO)
     ├── train_data_df_enriched_x.csv (тренировочные данные после обогащения)
 =======
-check_cars (промежуточные результаты разметки и обогащения)
+check_cars (результаты разметки и обогащения данными из exif и доп.данными о машинах)
 └── v1
-    ├── test_data_df_enriched_x.csv (тестовые данные после обогащения данными из exif и доп.данными о машинах)
+    ├── test_data_df_enriched_x.csv (тестовые данные после обогащения )
     ├── test_data_df_x.csv (тестовые данные после разметки моделью YOLO)
-    ├── train_data_df_enriched_x.csv (тренировочные данные после обогащения данными из exif и доп.данными о машинах)
->>>>>>> d33bada0cb6cb0aa1ad055bd9fe538563b96e5e1
+    ├── train_data_df_enriched_x.csv (тренировочные данные после обогащения)
     └── train_data_df_x.csv (тренировочные данные после разметки моделью YOLO)
 ```    
 ```shell
