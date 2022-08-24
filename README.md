@@ -39,8 +39,7 @@
 Набор тестовых данных: https://lodmedia.hb.bizmrg.com/case_files/791333/test_dataset_test.zip
 Данные о размерах автомобилей: https://auto.ru 
 Спецификация камер: https://www.devicespecifications.com
-Формулы расчета расстояний до объектов на снимках: 
-https://bootsector.livejournal.com/43436.html?ysclid=l73h5v6pxn233007381 
+Формулы расчета расстояний до объектов на снимках: https://bootsector.livejournal.com/43436.html?ysclid=l73h5v6pxn233007381 
 Ручная разметка снимка img_2674.heic: https://www.makesense.ai
 
 ```
@@ -68,13 +67,15 @@ Ulianovsk_220_X_final.ipynb - ноутбук в формате Jupyter/Colab.
     └── train
 ```
 
-### Дополнительные папки и файлы
+### Базовые папки и файлы
 ```shell
-train_dataset_train - тренировочный датасет
-test - тестовый датасет
-models - обученные модели CatBoost
-solutions - результаты предсказания
+train_dataset_train (тренировочный датасет) 
+├── train (тренировочные снимки)
+└── train.csv (таблица с именами снимков и расстояниями)
+test - тестовый датасет со снимками
+extra_folder - дополнительные директории
 ```
+### Дополнительные папки и файлы
 ```shell
 car_data (дополнительные данные о машинах)
 ├── cars_table.xlsx (общая таблица)
@@ -87,7 +88,7 @@ car_data (дополнительные данные о машинах)
 ```shell
 check_cars (результаты разметки и обогащения данными из exif и доп.данными о машинах)
 └── v1
-    ├── test_data_df_enriched_x.csv (тестовые данные после обогащения )
+    ├── test_data_df_enriched_x.csv (тестовые данные после обогащения)
     ├── test_data_df_x.csv (тестовые данные после разметки моделью YOLO)
     ├── train_data_df_enriched_x.csv (тренировочные данные после обогащения)
     └── train_data_df_x.csv (тренировочные данные после разметки моделью YOLO)
@@ -104,4 +105,8 @@ exif_data (результаты извлечения exif из снимков)
     ├── test_exif_jpg.csv (из тестовых снимков формата jpeg)
     ├── train_exif_heic.csv (из тренировочных снимков формата heic)
     └── train_exif_jpg.csv (из тренировочных снимков формата jpeg)
-```     
+```   
+```shell  
+models - обученные модели CatBoost
+solutions - результаты предсказания
+```  
