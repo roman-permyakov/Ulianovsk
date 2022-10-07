@@ -46,52 +46,60 @@ https://bootsector.livejournal.com/43436.html?ysclid=l73h5v6pxn233007381
 │   ├── exif_data
 │   │   └── v1
 │   ├── models
-│   └── solutions
+│   ├── solutions
+│   └── Ulianovsk_Permyakov.pdf
 ├── test
-└── train_dataset_train
+└── train_dataset_train         
     └── train
 ```
 
 ### Базовые папки и файлы
 ```shell
-train_dataset_train (тренировочный датасет) 
-├── train (тренировочные снимки)
-└── train.csv (таблица с именами снимков и расстояниями)
-test - тестовый датасет со снимками
-extra_folder - дополнительные директории
+train_dataset_train                - тренировочный датасет 
+├── train                          - тренировочные снимки
+└── train.csv                      - таблица с именами снимков и расстояниями
+test                               - тестовый датасет со снимками
+extra_folder                       - дополнительные директории
 ```
 ### Дополнительные папки и файлы
 ```shell
-car_data (дополнительные данные о машинах)
-├── cars_table.xlsx (общая таблица)
-├── img_2674.heic_annotation.csv (ручная разметка размытого снимка)
-├── test_car_heic.csv (на снимках тестового набора в формате heic)
-├── test_car_jpg.csv (на снимках тестового набора в формате jpg)
-├── train_car_heic.csv (на снимках тренировочного набора в формате heic)
-└── train_car_jpg.csv (на снимках тренировочного набора в формате jpg)
+car_data                           - дополнительные данные о машинах
+├── cars_table.xlsx                - общая таблица
+├── img_2674.heic_annotation.csv   - ручная разметка размытого снимка
+├── test_car_heic.csv              - на тест.снимках в формате heic
+├── test_car_jpg.csv               - на тест.снимках в формате jpeg
+├── train_car_heic.csv             - на трен.снимках в формате heic
+└── train_car_jpg.csv              - на трен.снимках в формате jpeg
 ```
 ```shell
-check_cars (результаты разметки и обогащения данными из exif и доп.данными о машинах)
+check_cars                           разметка + exif + данные о машинах
 └── v1
-    ├── test_data_df_enriched_x.csv (тестовые данные после обогащения)
-    ├── test_data_df_x.csv (тестовые данные после разметки моделью YOLO)
-    ├── train_data_df_enriched_x.csv (тренировочные данные после обогащения)
-    └── train_data_df_x.csv (тренировочные данные после разметки моделью YOLO)
+    ├── test_data_df_enriched_x.csv  тест.данные после обогащения
+    ├── test_data_df_x.csv           тест.данные после разметки YOLO
+    ├── train_data_df_enriched_x.csv трен.данные после обогащения
+    └── train_data_df_x.csv          трен.данные после разметки YOLO
 ```    
 ```shell
-exif_car_data (объединенные данные из exif и о машинах)
-├── test_car_exif_df.csv (для тестового набора снимков)
-└── train_car_exif_df.csv (для тренировочного набора снимков)
+exif_car_data                      - объединенные данные exif + машины
+├── test_car_exif_df.csv           - для тест.набора снимков
+└── train_car_exif_df.csv          - для трен.набора снимков
 ``` 
 ```shell
-exif_data (результаты извлечения exif из снимков)
+exif_data                          - результаты извлечения exif
 └── v1
-    ├── test_exif_heic.csv (из тестовых снимков формата heic)
-    ├── test_exif_jpg.csv (из тестовых снимков формата jpeg)
-    ├── train_exif_heic.csv (из тренировочных снимков формата heic)
-    └── train_exif_jpg.csv (из тренировочных снимков формата jpeg)
+    ├── test_exif_heic.csv         - из тест.снимков heic
+    ├── test_exif_jpg.csv          - из тест.снимков jpeg
+    ├── train_exif_heic.csv        - из трен.снимков heic
+    └── train_exif_jpg.csv         - из трен.снимков jpeg
 ```   
 ```shell  
-models - обученные модели CatBoost
-solutions - результаты предсказания
+models                             - обученные модели CatBoost
+solutions                          - результаты предсказания
+Ulianovsk_Permyakov.pdf            - презентация с пояснениями
 ```  
+<table>
+<tr>
+<td><img width="548" alt="image" src="https://user-images.githubusercontent.com/44007858/194670856-30e801e5-d961-4b21-aba9-a617867b1e09.jpg"></td>
+<td><img width="549" alt="image" src="https://user-images.githubusercontent.com/44007858/194670853-92317c39-8ed9-4e34-9428-0d74a2751cdb.jpg"></td>
+</tr>
+</table>
